@@ -205,6 +205,7 @@ body {
 }
 .footer-title {
   font-weight: bold;
+  margin: 0px 0px 16px;
   font-size: 16px;
   line-height: 19px;
   color: #111238;
