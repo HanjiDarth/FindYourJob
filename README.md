@@ -1,4 +1,4 @@
-# Glo-Academy-FYJ
+# FindYourJob - сайт про удалённую работу
 
-FindYourJob website
-https://hanjidarth.github.io/Glo-Academy-FYJ
+Интенсив Glo Academy  
+GitHub pages: https://hanjidarth.github.io/Glo-Academy-FYJ
