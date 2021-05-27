@@ -189,7 +189,8 @@ body {
   padding-top: 70px;
   padding-bottom: 100px;
 }
-.footer-description .footer-copyright {
+.footer-description,
+.footer-copyright {
   font-size: 12px;
   line-height: 140%;
   color: #b2b2b2;
