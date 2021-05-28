@@ -341,17 +341,15 @@ header {
     margin-right: 0px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+  header {
+    padding: 0px 20px;
+  }
   .burger-button {
     margin-left: 5px;
   }
   .burger-menu {
-    max-width: 190px;
-  }
-}
-@media (max-width: 576px) {
-  header {
-    padding: 0px 20px;
+    padding: 30px 15px 15px;
   }
   .button-primary {
     padding: 10px;
