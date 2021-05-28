@@ -342,6 +342,9 @@ header {
   }
 }
 @media (max-width: 768px) {
+  .burger-button {
+    margin-left: 5px;
+  }
   .burger-menu {
     max-width: 190px;
   }
