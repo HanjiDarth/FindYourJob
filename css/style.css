@@ -281,8 +281,8 @@ header {
     width: 24px;
     height: 24px;
     border: none;
-    -webkit-transition: background-image 0.5s;
-    transition: background-image 0.5s;
+    -webkit-transition: background-image 0.2s;
+    transition: background-image 0.2s;
   }
   .burger-button-active {
     background-image: url(../img/close-icon.svg);
@@ -339,6 +339,11 @@ header {
   .menu-link,
   .menu-item:not(:last-child) {
     margin-right: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .burger-menu {
+    max-width: 190px;
   }
 }
 @media (max-width: 576px) {
