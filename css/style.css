@@ -49,24 +49,34 @@ header {
   padding-right: 30px;
   padding-left: 30px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
 .button-primary:active {
-  background: #b2b2b2;
+  color: #111238;
+  background: #f2f3f6;
+}
+.button-primary:active .button-text,
+.button-primary:active .button-icon {
+  fill: #111238;
+  color: #111238;
 }
 .button-icon {
+  fill: #ffffff;
   vertical-align: middle;
+  transition: fill 0.2s;
 }
 .button-text {
   vertical-align: middle;
   color: #ffffff;
   margin-left: 10px;
+  transition: color 0.2s;
 }
 .hero-title {
   font-size: 44px;
   line-height: 53px;
   margin-top: 43px;
   margin-bottom: 15px;
+  transition: margin-top 0.5s;
 }
 .hero-text {
   font-size: 18px;
@@ -272,6 +282,10 @@ header {
   }
 }
 @media (max-width: 992px) {
+  .burger-wrapper {
+    position: relative;
+    padding-top: 25px;
+  }
   .burger-button {
     background-image: url(../img/burger-icon.svg);
     background-color: transparent;
@@ -281,24 +295,32 @@ header {
     width: 24px;
     height: 24px;
     border: none;
-    -webkit-transition: background-image 0.5s;
     transition: background-image 0.5s;
   }
   .burger-button-active {
     background-image: url(../img/close-icon.svg);
   }
   .burger-menu {
-    display: none;
+    position: absolute;
+    right: 40px;
+    top: 25px;
+    z-index: 666;
+    opacity: 0;
     background-color: #ffffff;
     max-width: 210px;
     padding: 30px;
     border: 1px solid rgba(209, 209, 209, 0.1);
     box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
     border-radius: 5px;
-    margin-top: 3px;
+    transform: translateY(-349px);
+    transition: opacity 0.3s, transform 0.5s;
   }
   .burger-menu-active {
-    display: flex !important;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .under-burger {
+    margin-top: 349px;
   }
   .menu {
     margin-bottom: 40px;
@@ -342,13 +364,11 @@ header {
   }
 }
 @media (max-width: 576px) {
-  header {
-    padding: 0px 20px;
-  }
   .burger-button {
     margin-left: 5px;
   }
   .burger-menu {
+    right: 30px;
     padding: 30px 15px 15px;
   }
   .button-primary {

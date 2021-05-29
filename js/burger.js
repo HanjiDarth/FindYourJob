@@ -1,9 +1,11 @@
 const menuElem = document.querySelector('.burger-menu');
 const humburgerElem = document.querySelector('.burger-button');
+const firstElem = document.querySelector('.first-elem');
 
 const toggleMenu = () => {
       menuElem.classList.toggle('burger-menu-active');
       humburgerElem.classList.toggle('burger-button-active');
+      firstElem.classList.toggle('under-burger');
 
       if (menuElem.classList.contains('burger-menu-active')) {
         document.body.addEventListener('click', handlerMenu)
