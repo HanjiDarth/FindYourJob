@@ -14,11 +14,12 @@
 
 </head>
 <body>
-    <header class="header pb-5">
+    <header class="header py-4 py-lg-3">
         <div class="container">
-            <div class="burger-wrapper d-flex d-lg-none pt-4 align-items-center justify-content-between">
+            <div class="burger-wrapper d-flex d-lg-none align-items-center justify-content-between">
                 <a href="/">
-                    <img class="logo" src="img/logo.svg" alt="logo: find your job">
+                    <img class="logo d-none d-sm-flex" src="img/logo-big.svg" alt="logo: find your job">
+                    <img class="logo d-sm-none" src="img/logo-mini.svg" alt="logo: find your job">
                 </a>
                 <div class="burger-menu d-flex flex-column align-items-center">
                     <nav class="nav">
@@ -41,10 +42,10 @@
                 <button class="burger-button d-flex justify-content-end" aria-label="icon: burger"></button>
             </div>
             <!-- /.navbar-burger -->
-            <div class="row navbar py-3 d-none d-lg-flex align-items-center justify-content-center">
+            <div class="row navbar d-none d-lg-flex align-items-center justify-content-center">
                 <div class="col-2">
                     <a href="/" class="logo-link">
-                        <img src="img/logo.svg" alt="logo: find your job">
+                        <img src="img/logo-big.svg" alt="logo: find your job">
                     </a>
                 </div>
                 <!-- /.col -->
@@ -71,11 +72,17 @@
                 <!-- /.col -->
             </div>
             <!-- /.row navbar -->
+        
+        </div>
+        <!-- /.container -->
+    </header>
+    <section class="section block-section first-elem" id="search">
+        <div class="container">
             <div class="row pt-1 pt-lg-5 hero">
                 <div class="col-xxl-5 col-lg-6 col-md-12">
-                    <h1 class="hero-title first-elem">Найдите удалённую работу ващей мечты</h1>
-                    <p class="hero-text">Создайте резюме или отправьте отклик на вакансию в&nbsp;компании с&nbsp;мировым именем и&nbsp;работайте по&nbsp;свободному&nbsp;графику</p>
-                    <form action="#" class="hero-form">
+                    <h1 class="block-title">Найдите удалённую работу ващей мечты</h1>
+                    <p class="block-text">Создайте резюме или отправьте отклик на вакансию в&nbsp;компании с&nbsp;мировым именем и&nbsp;работайте по&nbsp;свободному&nbsp;графику</p>
+                    <form action="#" class="search-form">
                         <div class="input-group d-flex">
                             <input type="text" class="input" placeholder="Начните поиск">
                             <button class="button button-primary">
@@ -87,7 +94,7 @@
                         </div>
                         <!-- /.input-group -->    
                     </form>
-                    <!-- /.hero-form -->
+                    <!-- /.search-form -->
                     
                     <div class="tags-group">
                         <span class="tags-label">Например:</span>
@@ -106,7 +113,9 @@
             <!-- /.row -->
         </div>
         <!-- /.container -->
-    </header>
+    </section>
+        
+    
     <section class="section categories" id="categories">
         <div class="container">
             <h2 class="section-title">Категории</h2>
@@ -244,11 +253,11 @@
                 <a href="#" class="button button-primary">Больше вакансий</a>
         </div>
     </section>
-    <section class="section subscribe" id="subscribe">
+    <section class="section block-section" id="subscribe">
         <div class="container">
             <form action="" class="subscribe-form">
-                <h2 class="subscribe-title">Подпишитесь на рассылку с новыми вакансиями</h2>
-                <p class="subscribe-subtitle">Мы отправляем по одному письму в&nbsp;неделю с&nbsp;подходящими вам вакансиями</p>
+                <h2 class="block-subtitle">Подпишитесь на рассылку с новыми вакансиями</h2>
+                <p class="block-text">Мы отправляем по одному письму в&nbsp;неделю с&nbsp;подходящими вам вакансиями</p>
                 <div class="input-group d-flex">
                     <input type="text" class="input" placeholder="E-mail">
                     <button class="button button-primary">
@@ -268,7 +277,7 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0 col-12 mx-auto">
                     <a href="/" class="logo-link">
-                        <img src="img/logo.svg" alt="logo: find your job">
+                        <img src="img/logo-big.svg" alt="logo: find your job">
                     </a>
                     <p class="footer-description">Сайт с вакансиями для тех,<br>кто ищет удаленную работу</p>
                     <span class="footer-copyright">@ 2021</span>

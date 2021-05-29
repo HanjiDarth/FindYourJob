@@ -71,14 +71,13 @@ header {
   margin-left: 10px;
   transition: color 0.2s;
 }
-.hero-title {
+.block-title {
   font-size: 44px;
   line-height: 53px;
   margin-top: 43px;
   margin-bottom: 15px;
-  transition: margin-top 0.5s;
 }
-.hero-text {
+.block-text {
   font-size: 18px;
   line-height: 140%;
   margin-bottom: 30px;
@@ -125,6 +124,13 @@ header {
 .section-title {
   margin-bottom: 40px;
   margin-top: 0;
+}
+.first-elem {
+  padding-top: 0px;
+  transition: padding-top 0.5s;
+}
+.block-section {
+  background: #f2f3f6;
 }
 .card {
   text-decoration: none;
@@ -205,9 +211,6 @@ header {
   margin-top: 40px;
   margin-bottom: 10px;
 }
-.subscribe {
-  background: #f2f3f6;
-}
 .subscribe-form {
   max-width: 460px;
   margin: auto;
@@ -284,16 +287,14 @@ header {
 @media (max-width: 992px) {
   .burger-wrapper {
     position: relative;
-    padding-top: 25px;
   }
   .burger-button {
     background-image: url(../img/burger-icon.svg);
     background-color: transparent;
     padding: 0;
     margin-left: 20px;
-    margin-top: 3px;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     border: none;
     transition: background-image 0.5s;
   }
@@ -303,7 +304,7 @@ header {
   .burger-menu {
     position: absolute;
     right: 40px;
-    top: 25px;
+    top: 0px;
     z-index: 666;
     opacity: 0;
     background-color: #ffffff;
@@ -320,7 +321,7 @@ header {
     transform: translateY(0px);
   }
   .under-burger {
-    margin-top: 349px;
+    padding-top: 349px;
   }
   .menu {
     margin-bottom: 40px;
@@ -362,18 +363,21 @@ header {
   .menu-item:not(:last-child) {
     margin-right: 0px;
   }
+  .section-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .block-title,
+  .block-subtitle {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .block-text {
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 @media (max-width: 576px) {
-  .burger-button {
-    margin-left: 5px;
-  }
-  .burger-menu {
-    right: 30px;
-    padding: 30px 15px 15px;
-  }
-  .button-primary {
-    padding: 10px;
-  }
   .footer {
     text-align: center;
   }
