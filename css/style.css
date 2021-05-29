@@ -45,10 +45,7 @@ header {
   color: #ffffff;
   background: #1a75e8;
   border-radius: 5px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 15px 30px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
 }
@@ -63,6 +60,8 @@ header {
 }
 .button-icon {
   fill: #ffffff;
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
   transition: fill 0.2s;
 }
@@ -105,18 +104,41 @@ header {
   font-size: 14px;
   line-height: 17px;
 }
+.tags-group-offer {
+  text-align: center;
+  max-width: 460px;
+  padding-left: 0px;
+}
+.tags-label,
+.tags-label-offer {
+  display: inline;
+}
 .tag {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  height: 29px;
   color: #b2b2b2;
   text-decoration: none;
   padding: 5px 10px;
-  margin-left: 10px;
+  margin: 3px 0px 3px 10px;
   border: 1px solid #b2b2b2;
   border-radius: 5px;
+  cursor: default;
   transition: background 0.2s, color 0.2s;
+}
+.tag-icon {
+  width: 17px;
+  height: 17px;
+  fill: #b2b2b2;
+  transition: fill 0.2s;
 }
 .tag:hover {
   background: #b2b2b2;
   color: #f2f3f6;
+}
+.tag:hover .tag-icon {
+  fill: #f2f3f6;
 }
 .section {
   padding-top: 70px;
@@ -151,6 +173,8 @@ header {
 }
 .card-icon {
   fill: #111238;
+  width: 30px;
+  height: 24px;
   margin-bottom: 15px;
   transition: fill 0.2s;
 }
@@ -264,10 +288,18 @@ header {
 .footer-list-link:hover {
   color: #1a75e8;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1399px) {
+  .tags-group-offer {
+    max-width: 320px;
+  }
+}
+@media (max-width: 1199px) {
   .card {
     margin-left: auto;
     margin-right: auto;
+  }
+  .tags-group-offer {
+    max-width: 230px;
   }
   .offer-salery {
     margin-right: 30px;
@@ -286,12 +318,15 @@ header {
     margin-right: 5px;
   }
 }
-@media (max-width: 992px) {
-  .burger-wrapper {
+@media (max-width: 991px) {
+  .logo-mini {
+    display: none;
+  }
+  .humburger-wrapper {
     position: relative;
   }
-  .burger-button {
-    background-image: url(../img/burger-icon.svg);
+  .humburger-button {
+    background-image: url(../img/humburger-icon.svg);
     background-color: transparent;
     padding: 0;
     margin-left: 20px;
@@ -301,10 +336,10 @@ header {
     cursor: pointer;
     transition: background-image 0.5s;
   }
-  .burger-button-active {
+  .humburger-button-active {
     background-image: url(../img/close-icon.svg);
   }
-  .burger-menu {
+  .humburger-menu {
     position: absolute;
     right: 40px;
     top: 0px;
@@ -319,11 +354,11 @@ header {
     transform: translateY(-349px);
     transition: opacity 0.3s, transform 0.5s;
   }
-  .burger-menu-active {
+  .humburger-menu-active {
     opacity: 1;
     transform: translateY(0px);
   }
-  .under-burger {
+  .under-humburger {
     padding-top: 271px;
   }
   .menu {
@@ -341,8 +376,10 @@ header {
   .section-title {
     text-align: center;
   }
+  .tags-group {
+    padding-left: 0;
+  }
   .tags-label {
-    display: block;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -380,17 +417,32 @@ header {
     line-height: 140%;
   }
 }
-@media (max-width: 576px) {
-  .burger-button {
+@media (max-width: 575px) {
+  .humburger-button {
     margin-right: 3px;
   }
-  .logo {
-    margin-left: 10px;
-    width: 90px;
-    height: 20.54px;
+  input {
+    width: 100%;
   }
   .footer {
     text-align: center;
+  }
+}
+@media (max-width: 359px) {
+  .logo {
+    display: none;
+  }
+  .logo-mini {
+    display: flex !important;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .humburger-menu {
+    padding: 10px;
+  }
+  .button-primary {
+    padding: 5px 10px;
   }
 }
 
