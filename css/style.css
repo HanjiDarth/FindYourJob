@@ -281,8 +281,8 @@ header {
     width: 24px;
     height: 24px;
     border: none;
-    -webkit-transition: background-image 0.2s;
-    transition: background-image 0.2s;
+    -webkit-transition: background-image 0.5s;
+    transition: background-image 0.5s;
   }
   .burger-button-active {
     background-image: url(../img/close-icon.svg);
