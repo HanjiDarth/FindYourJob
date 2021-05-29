@@ -124,8 +124,10 @@ header {
   margin: 3px 0px 3px 10px;
   border: 1px solid #b2b2b2;
   border-radius: 5px;
-  cursor: default;
   transition: background 0.2s, color 0.2s;
+}
+.tag-offer {
+  cursor: default;
 }
 .tag-icon {
   width: 17px;
