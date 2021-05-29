@@ -136,6 +136,7 @@ header {
   text-decoration: none;
   background: #f2f3f6;
   color: #111238;
+  max-width: 270px;
   border-radius: 10px;
   padding: 35px;
   transition: background 0.2s, color 0.2s;
@@ -378,10 +379,15 @@ header {
   }
 }
 @media (max-width: 576px) {
+  .burger-button {
+    margin-right: 3px;
+  }
+  .logo {
+    margin-left: 10px;
+    width: 90px;
+    height: 20.54px;
+  }
   .footer {
     text-align: center;
-  }
-  .card {
-    max-width: 250px;
   }
 }
