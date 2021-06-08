@@ -447,31 +447,3 @@ header {
     padding: 5px 10px;
   }
 }
-
-/* 
-block about me 
-*/
-
-.block-by {
-  background: #000000;
-  border-top: 5px solid #1a75e8;
-  color: #ffffff;
-}
-.by-tags-group {
-  padding: 0;
-}
-.by-tag {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: bold;
-  color: #ffffff;
-  padding: 2px 10px;
-  margin: 6px 3px;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  text-align: center;
-}
-.by-copyright {
-  margin-top: 32px;
-  color: #808080;
-}
